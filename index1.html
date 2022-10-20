@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img onclick="
+    var imagen = document.querySelector('#imagen');
+    var borde = imagen.style.border;
+
+    console.log(borde);
+
+    //Ponerle el border
+    if (borde == '') {
+    
+    //colocamos el borde
+        imagen.style.border = '2px solid red';
+
+    } else {
+        imagen.style.border = '';
+
+    }
+    "
+    src="assets/img/mesapingpong.png" alt="img" id="imagen" style="border: 2px solid red">
+</body>
+</html>
